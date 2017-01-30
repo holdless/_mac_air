@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68C9AB0B199B45310000D4BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB0A199B45310000D4BF /* Foundation.framework */; };
+		68C9AB0D199B45310000D4BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB0C199B45310000D4BF /* CoreGraphics.framework */; };
+		68C9AB0F199B45310000D4BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB0E199B45310000D4BF /* UIKit.framework */; };
+		68C9AB15199B45310000D4BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AB13199B45310000D4BF /* InfoPlist.strings */; };
+		68C9AB17199B45310000D4BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AB16199B45310000D4BF /* main.m */; };
+		68C9AB1B199B45310000D4BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AB1A199B45310000D4BF /* AppDelegate.m */; };
+		68C9AB1E199B45310000D4BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AB1C199B45310000D4BF /* Main.storyboard */; };
+		68C9AB21199B45310000D4BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AB20199B45310000D4BF /* ViewController.m */; };
+		68C9AB23199B45310000D4BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AB22199B45310000D4BF /* Images.xcassets */; };
+		68C9AB2A199B45310000D4BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB29199B45310000D4BF /* XCTest.framework */; };
+		68C9AB2B199B45310000D4BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB0A199B45310000D4BF /* Foundation.framework */; };
+		68C9AB2C199B45310000D4BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C9AB0E199B45310000D4BF /* UIKit.framework */; };
+		68C9AB34199B45310000D4BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AB32199B45310000D4BF /* InfoPlist.strings */; };
+		68C9AB36199B45310000D4BF /* SHWebCameraSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AB35199B45310000D4BF /* SHWebCameraSocketTests.m */; };
+		68C9AB41199B49130000D4BF /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C9AB40199B49130000D4BF /* NSData+Conversion.m */; };
+		68C9AB45199B49400000D4BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68C9AB42199B49400000D4BF /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68C9AB2D199B45310000D4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68C9AAFF199B45310000D4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C9AB06199B45310000D4BF;
+			remoteInfo = SHWebCameraSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68C9AB07199B45310000D4BF /* SHWebCameraSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHWebCameraSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C9AB0A199B45310000D4BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68C9AB0C199B45310000D4BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68C9AB0E199B45310000D4BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68C9AB12199B45310000D4BF /* SHWebCameraSocket-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHWebCameraSocket-Info.plist"; sourceTree = "<group>"; };
+		68C9AB14199B45310000D4BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68C9AB16199B45310000D4BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68C9AB18199B45310000D4BF /* SHWebCameraSocket-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHWebCameraSocket-Prefix.pch"; sourceTree = "<group>"; };
+		68C9AB19199B45310000D4BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68C9AB1A199B45310000D4BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68C9AB1D199B45310000D4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68C9AB1F199B45310000D4BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68C9AB20199B45310000D4BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68C9AB22199B45310000D4BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68C9AB28199B45310000D4BF /* SHWebCameraSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHWebCameraSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C9AB29199B45310000D4BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68C9AB31199B45310000D4BF /* SHWebCameraSocketTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHWebCameraSocketTests-Info.plist"; sourceTree = "<group>"; };
+		68C9AB33199B45310000D4BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68C9AB35199B45310000D4BF /* SHWebCameraSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHWebCameraSocketTests.m; sourceTree = "<group>"; };
+		68C9AB3F199B49130000D4BF /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		68C9AB40199B49130000D4BF /* NSData+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		68C9AB42199B49400000D4BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68C9AB04199B45310000D4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB0D199B45310000D4BF /* CoreGraphics.framework in Frameworks */,
+				68C9AB0F199B45310000D4BF /* UIKit.framework in Frameworks */,
+				68C9AB0B199B45310000D4BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C9AB25199B45310000D4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB2A199B45310000D4BF /* XCTest.framework in Frameworks */,
+				68C9AB2C199B45310000D4BF /* UIKit.framework in Frameworks */,
+				68C9AB2B199B45310000D4BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68C9AAFE199B45310000D4BF = {
+			isa = PBXGroup;
+			children = (
+				68C9AB10199B45310000D4BF /* SHWebCameraSocket */,
+				68C9AB2F199B45310000D4BF /* SHWebCameraSocketTests */,
+				68C9AB09199B45310000D4BF /* Frameworks */,
+				68C9AB08199B45310000D4BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68C9AB08199B45310000D4BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB07199B45310000D4BF /* SHWebCameraSocket.app */,
+				68C9AB28199B45310000D4BF /* SHWebCameraSocketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68C9AB09199B45310000D4BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB0A199B45310000D4BF /* Foundation.framework */,
+				68C9AB0C199B45310000D4BF /* CoreGraphics.framework */,
+				68C9AB0E199B45310000D4BF /* UIKit.framework */,
+				68C9AB29199B45310000D4BF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68C9AB10199B45310000D4BF /* SHWebCameraSocket */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB3F199B49130000D4BF /* NSData+Conversion.h */,
+				68C9AB40199B49130000D4BF /* NSData+Conversion.m */,
+				68C9AB19199B45310000D4BF /* AppDelegate.h */,
+				68C9AB1A199B45310000D4BF /* AppDelegate.m */,
+				68C9AB1C199B45310000D4BF /* Main.storyboard */,
+				68C9AB1F199B45310000D4BF /* ViewController.h */,
+				68C9AB20199B45310000D4BF /* ViewController.m */,
+				68C9AB22199B45310000D4BF /* Images.xcassets */,
+				68C9AB42199B49400000D4BF /* Default-568h@2x.png */,
+				68C9AB11199B45310000D4BF /* Supporting Files */,
+			);
+			path = SHWebCameraSocket;
+			sourceTree = "<group>";
+		};
+		68C9AB11199B45310000D4BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB12199B45310000D4BF /* SHWebCameraSocket-Info.plist */,
+				68C9AB13199B45310000D4BF /* InfoPlist.strings */,
+				68C9AB16199B45310000D4BF /* main.m */,
+				68C9AB18199B45310000D4BF /* SHWebCameraSocket-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68C9AB2F199B45310000D4BF /* SHWebCameraSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB35199B45310000D4BF /* SHWebCameraSocketTests.m */,
+				68C9AB30199B45310000D4BF /* Supporting Files */,
+			);
+			path = SHWebCameraSocketTests;
+			sourceTree = "<group>";
+		};
+		68C9AB30199B45310000D4BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68C9AB31199B45310000D4BF /* SHWebCameraSocketTests-Info.plist */,
+				68C9AB32199B45310000D4BF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68C9AB06199B45310000D4BF /* SHWebCameraSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C9AB39199B45310000D4BF /* Build configuration list for PBXNativeTarget "SHWebCameraSocket" */;
+			buildPhases = (
+				68C9AB03199B45310000D4BF /* Sources */,
+				68C9AB04199B45310000D4BF /* Frameworks */,
+				68C9AB05199B45310000D4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHWebCameraSocket;
+			productName = SHWebCameraSocket;
+			productReference = 68C9AB07199B45310000D4BF /* SHWebCameraSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68C9AB27199B45310000D4BF /* SHWebCameraSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68C9AB3C199B45310000D4BF /* Build configuration list for PBXNativeTarget "SHWebCameraSocketTests" */;
+			buildPhases = (
+				68C9AB24199B45310000D4BF /* Sources */,
+				68C9AB25199B45310000D4BF /* Frameworks */,
+				68C9AB26199B45310000D4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68C9AB2E199B45310000D4BF /* PBXTargetDependency */,
+			);
+			name = SHWebCameraSocketTests;
+			productName = SHWebCameraSocketTests;
+			productReference = 68C9AB28199B45310000D4BF /* SHWebCameraSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68C9AAFF199B45310000D4BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = x;
+				TargetAttributes = {
+					68C9AB27199B45310000D4BF = {
+						TestTargetID = 68C9AB06199B45310000D4BF;
+					};
+				};
+			};
+			buildConfigurationList = 68C9AB02199B45310000D4BF /* Build configuration list for PBXProject "SHWebCameraSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68C9AAFE199B45310000D4BF;
+			productRefGroup = 68C9AB08199B45310000D4BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68C9AB06199B45310000D4BF /* SHWebCameraSocket */,
+				68C9AB27199B45310000D4BF /* SHWebCameraSocketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68C9AB05199B45310000D4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB23199B45310000D4BF /* Images.xcassets in Resources */,
+				68C9AB45199B49400000D4BF /* Default-568h@2x.png in Resources */,
+				68C9AB15199B45310000D4BF /* InfoPlist.strings in Resources */,
+				68C9AB1E199B45310000D4BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C9AB26199B45310000D4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB34199B45310000D4BF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68C9AB03199B45310000D4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB21199B45310000D4BF /* ViewController.m in Sources */,
+				68C9AB1B199B45310000D4BF /* AppDelegate.m in Sources */,
+				68C9AB41199B49130000D4BF /* NSData+Conversion.m in Sources */,
+				68C9AB17199B45310000D4BF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68C9AB24199B45310000D4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C9AB36199B45310000D4BF /* SHWebCameraSocketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68C9AB2E199B45310000D4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68C9AB06199B45310000D4BF /* SHWebCameraSocket */;
+			targetProxy = 68C9AB2D199B45310000D4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68C9AB13199B45310000D4BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C9AB14199B45310000D4BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68C9AB1C199B45310000D4BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C9AB1D199B45310000D4BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68C9AB32199B45310000D4BF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68C9AB33199B45310000D4BF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68C9AB37199B45310000D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68C9AB38199B45310000D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68C9AB3A199B45310000D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWebCameraSocket/SHWebCameraSocket-Prefix.pch";
+				INFOPLIST_FILE = "SHWebCameraSocket/SHWebCameraSocket-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68C9AB3B199B45310000D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWebCameraSocket/SHWebCameraSocket-Prefix.pch";
+				INFOPLIST_FILE = "SHWebCameraSocket/SHWebCameraSocket-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68C9AB3D199B45310000D4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SHWebCameraSocket.app/SHWebCameraSocket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWebCameraSocket/SHWebCameraSocket-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SHWebCameraSocketTests/SHWebCameraSocketTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68C9AB3E199B45310000D4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SHWebCameraSocket.app/SHWebCameraSocket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SHWebCameraSocket/SHWebCameraSocket-Prefix.pch";
+				INFOPLIST_FILE = "SHWebCameraSocketTests/SHWebCameraSocketTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68C9AB02199B45310000D4BF /* Build configuration list for PBXProject "SHWebCameraSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C9AB37199B45310000D4BF /* Debug */,
+				68C9AB38199B45310000D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C9AB39199B45310000D4BF /* Build configuration list for PBXNativeTarget "SHWebCameraSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C9AB3A199B45310000D4BF /* Debug */,
+				68C9AB3B199B45310000D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68C9AB3C199B45310000D4BF /* Build configuration list for PBXNativeTarget "SHWebCameraSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68C9AB3D199B45310000D4BF /* Debug */,
+				68C9AB3E199B45310000D4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68C9AAFF199B45310000D4BF /* Project object */;
+}

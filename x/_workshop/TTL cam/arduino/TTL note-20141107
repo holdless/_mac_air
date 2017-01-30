@@ -1,0 +1,5 @@
+Finally I don’t use the JPEGCamera LIB, so “TTL_CAM_usingLib” is not currently used.
+
+“TTLCamAr” is to take a picture and upload to WIFI_SHIELD’s SD card.
+
+“TTLCamClientAr” is to take a picture and directly upload via WIFI to MBA

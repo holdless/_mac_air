@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		682A5ED519CD35A500DCE3A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5ED419CD35A500DCE3A0 /* Foundation.framework */; };
+		682A5ED719CD35A500DCE3A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5ED619CD35A500DCE3A0 /* CoreGraphics.framework */; };
+		682A5ED919CD35A500DCE3A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5ED819CD35A500DCE3A0 /* UIKit.framework */; };
+		682A5EDF19CD35A500DCE3A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 682A5EDD19CD35A500DCE3A0 /* InfoPlist.strings */; };
+		682A5EE119CD35A500DCE3A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5EE019CD35A500DCE3A0 /* main.m */; };
+		682A5EE519CD35A500DCE3A0 /* FSKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5EE419CD35A500DCE3A0 /* FSKAppDelegate.m */; };
+		682A5EE819CD35A500DCE3A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682A5EE619CD35A500DCE3A0 /* Main.storyboard */; };
+		682A5EEB19CD35A500DCE3A0 /* FSKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5EEA19CD35A500DCE3A0 /* FSKViewController.m */; };
+		682A5EED19CD35A500DCE3A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682A5EEC19CD35A500DCE3A0 /* Images.xcassets */; };
+		682A5EF419CD35A500DCE3A0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5EF319CD35A500DCE3A0 /* XCTest.framework */; };
+		682A5EF519CD35A500DCE3A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5ED419CD35A500DCE3A0 /* Foundation.framework */; };
+		682A5EF619CD35A500DCE3A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5ED819CD35A500DCE3A0 /* UIKit.framework */; };
+		682A5EFE19CD35A500DCE3A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 682A5EFC19CD35A500DCE3A0 /* InfoPlist.strings */; };
+		682A5F0019CD35A500DCE3A0 /* FSK_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5EFF19CD35A500DCE3A0 /* FSK_DemoTests.m */; };
+		682A5F2219CD364400DCE3A0 /* NSString+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F0E19CD364400DCE3A0 /* NSString+HexColor.m */; };
+		682A5F2319CD364400DCE3A0 /* AudioQueueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F1219CD364400DCE3A0 /* AudioQueueObject.m */; };
+		682A5F2419CD364400DCE3A0 /* AudioSignalAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F1419CD364400DCE3A0 /* AudioSignalAnalyzer.m */; };
+		682A5F2519CD364400DCE3A0 /* AudioSignalGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F1619CD364400DCE3A0 /* AudioSignalGenerator.m */; };
+		682A5F2619CD364400DCE3A0 /* FSKRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F1B19CD364400DCE3A0 /* FSKRecognizer.mm */; };
+		682A5F2719CD364400DCE3A0 /* FSKSerialGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F1D19CD364400DCE3A0 /* FSKSerialGenerator.mm */; };
+		682A5F2819CD364400DCE3A0 /* MultiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F2019CD364400DCE3A0 /* MultiDelegate.m */; };
+		682A5F2B19CD36F600DCE3A0 /* AudioDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 682A5F2A19CD36F600DCE3A0 /* AudioDemo.m */; };
+		682A5F2D19CD38ED00DCE3A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5F2C19CD38ED00DCE3A0 /* AVFoundation.framework */; };
+		682A5F2F19CD38F900DCE3A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5F2E19CD38F900DCE3A0 /* AudioToolbox.framework */; };
+		682A5F3319CD391300DCE3A0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682A5F3219CD391300DCE3A0 /* CoreAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		682A5EF719CD35A500DCE3A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682A5EC919CD35A500DCE3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682A5ED019CD35A500DCE3A0;
+			remoteInfo = FSK_Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		682A5ED119CD35A500DCE3A0 /* FSK_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSK_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682A5ED419CD35A500DCE3A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		682A5ED619CD35A500DCE3A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		682A5ED819CD35A500DCE3A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		682A5EDC19CD35A500DCE3A0 /* FSK_Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FSK_Demo-Info.plist"; sourceTree = "<group>"; };
+		682A5EDE19CD35A500DCE3A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		682A5EE019CD35A500DCE3A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		682A5EE219CD35A500DCE3A0 /* FSK_Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FSK_Demo-Prefix.pch"; sourceTree = "<group>"; };
+		682A5EE319CD35A500DCE3A0 /* FSKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSKAppDelegate.h; sourceTree = "<group>"; };
+		682A5EE419CD35A500DCE3A0 /* FSKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSKAppDelegate.m; sourceTree = "<group>"; };
+		682A5EE719CD35A500DCE3A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		682A5EE919CD35A500DCE3A0 /* FSKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSKViewController.h; sourceTree = "<group>"; };
+		682A5EEA19CD35A500DCE3A0 /* FSKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSKViewController.m; sourceTree = "<group>"; };
+		682A5EEC19CD35A500DCE3A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		682A5EF219CD35A500DCE3A0 /* FSK_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSK_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		682A5EF319CD35A500DCE3A0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		682A5EFB19CD35A500DCE3A0 /* FSK_DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FSK_DemoTests-Info.plist"; sourceTree = "<group>"; };
+		682A5EFD19CD35A500DCE3A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		682A5EFF19CD35A500DCE3A0 /* FSK_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSK_DemoTests.m; sourceTree = "<group>"; };
+		682A5F0D19CD364400DCE3A0 /* NSString+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HexColor.h"; sourceTree = "<group>"; };
+		682A5F0E19CD364400DCE3A0 /* NSString+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexColor.m"; sourceTree = "<group>"; };
+		682A5F0F19CD364400DCE3A0 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		682A5F1119CD364400DCE3A0 /* AudioQueueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueObject.h; sourceTree = "<group>"; };
+		682A5F1219CD364400DCE3A0 /* AudioQueueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueObject.m; sourceTree = "<group>"; };
+		682A5F1319CD364400DCE3A0 /* AudioSignalAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSignalAnalyzer.h; sourceTree = "<group>"; };
+		682A5F1419CD364400DCE3A0 /* AudioSignalAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSignalAnalyzer.m; sourceTree = "<group>"; };
+		682A5F1519CD364400DCE3A0 /* AudioSignalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSignalGenerator.h; sourceTree = "<group>"; };
+		682A5F1619CD364400DCE3A0 /* AudioSignalGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSignalGenerator.m; sourceTree = "<group>"; };
+		682A5F1719CD364400DCE3A0 /* CharReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharReceiver.h; sourceTree = "<group>"; };
+		682A5F1819CD364400DCE3A0 /* FSKByteQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKByteQueue.h; sourceTree = "<group>"; };
+		682A5F1919CD364400DCE3A0 /* FSKModemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKModemConfig.h; sourceTree = "<group>"; };
+		682A5F1A19CD364400DCE3A0 /* FSKRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKRecognizer.h; sourceTree = "<group>"; };
+		682A5F1B19CD364400DCE3A0 /* FSKRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKRecognizer.mm; sourceTree = "<group>"; };
+		682A5F1C19CD364400DCE3A0 /* FSKSerialGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKSerialGenerator.h; sourceTree = "<group>"; };
+		682A5F1D19CD364400DCE3A0 /* FSKSerialGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSKSerialGenerator.mm; sourceTree = "<group>"; };
+		682A5F1E19CD364400DCE3A0 /* lockfree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lockfree.h; sourceTree = "<group>"; };
+		682A5F1F19CD364400DCE3A0 /* MultiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiDelegate.h; sourceTree = "<group>"; };
+		682A5F2019CD364400DCE3A0 /* MultiDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiDelegate.m; sourceTree = "<group>"; };
+		682A5F2119CD364400DCE3A0 /* PatternRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternRecognizer.h; sourceTree = "<group>"; };
+		682A5F2919CD36F600DCE3A0 /* AudioDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDemo.h; sourceTree = "<group>"; };
+		682A5F2A19CD36F600DCE3A0 /* AudioDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDemo.m; sourceTree = "<group>"; };
+		682A5F2C19CD38ED00DCE3A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		682A5F2E19CD38F900DCE3A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		682A5F3219CD391300DCE3A0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682A5ECE19CD35A500DCE3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5F3319CD391300DCE3A0 /* CoreAudio.framework in Frameworks */,
+				682A5F2F19CD38F900DCE3A0 /* AudioToolbox.framework in Frameworks */,
+				682A5F2D19CD38ED00DCE3A0 /* AVFoundation.framework in Frameworks */,
+				682A5ED719CD35A500DCE3A0 /* CoreGraphics.framework in Frameworks */,
+				682A5ED919CD35A500DCE3A0 /* UIKit.framework in Frameworks */,
+				682A5ED519CD35A500DCE3A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682A5EEF19CD35A500DCE3A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5EF419CD35A500DCE3A0 /* XCTest.framework in Frameworks */,
+				682A5EF619CD35A500DCE3A0 /* UIKit.framework in Frameworks */,
+				682A5EF519CD35A500DCE3A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682A5EC819CD35A500DCE3A0 = {
+			isa = PBXGroup;
+			children = (
+				682A5F0B19CD364400DCE3A0 /* Class */,
+				682A5EDA19CD35A500DCE3A0 /* FSK_Demo */,
+				682A5EF919CD35A500DCE3A0 /* FSK_DemoTests */,
+				682A5ED319CD35A500DCE3A0 /* Frameworks */,
+				682A5ED219CD35A500DCE3A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		682A5ED219CD35A500DCE3A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				682A5ED119CD35A500DCE3A0 /* FSK_Demo.app */,
+				682A5EF219CD35A500DCE3A0 /* FSK_DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		682A5ED319CD35A500DCE3A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				682A5F3219CD391300DCE3A0 /* CoreAudio.framework */,
+				682A5F2E19CD38F900DCE3A0 /* AudioToolbox.framework */,
+				682A5F2C19CD38ED00DCE3A0 /* AVFoundation.framework */,
+				682A5ED419CD35A500DCE3A0 /* Foundation.framework */,
+				682A5ED619CD35A500DCE3A0 /* CoreGraphics.framework */,
+				682A5ED819CD35A500DCE3A0 /* UIKit.framework */,
+				682A5EF319CD35A500DCE3A0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		682A5EDA19CD35A500DCE3A0 /* FSK_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				682A5F2919CD36F600DCE3A0 /* AudioDemo.h */,
+				682A5F2A19CD36F600DCE3A0 /* AudioDemo.m */,
+				682A5EE319CD35A500DCE3A0 /* FSKAppDelegate.h */,
+				682A5EE419CD35A500DCE3A0 /* FSKAppDelegate.m */,
+				682A5EE619CD35A500DCE3A0 /* Main.storyboard */,
+				682A5EE919CD35A500DCE3A0 /* FSKViewController.h */,
+				682A5EEA19CD35A500DCE3A0 /* FSKViewController.m */,
+				682A5EEC19CD35A500DCE3A0 /* Images.xcassets */,
+				682A5EDB19CD35A500DCE3A0 /* Supporting Files */,
+			);
+			path = FSK_Demo;
+			sourceTree = "<group>";
+		};
+		682A5EDB19CD35A500DCE3A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				682A5EDC19CD35A500DCE3A0 /* FSK_Demo-Info.plist */,
+				682A5EDD19CD35A500DCE3A0 /* InfoPlist.strings */,
+				682A5EE019CD35A500DCE3A0 /* main.m */,
+				682A5EE219CD35A500DCE3A0 /* FSK_Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		682A5EF919CD35A500DCE3A0 /* FSK_DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				682A5EFF19CD35A500DCE3A0 /* FSK_DemoTests.m */,
+				682A5EFA19CD35A500DCE3A0 /* Supporting Files */,
+			);
+			path = FSK_DemoTests;
+			sourceTree = "<group>";
+		};
+		682A5EFA19CD35A500DCE3A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				682A5EFB19CD35A500DCE3A0 /* FSK_DemoTests-Info.plist */,
+				682A5EFC19CD35A500DCE3A0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		682A5F0B19CD364400DCE3A0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				682A5F0C19CD364400DCE3A0 /* FK */,
+				682A5F1019CD364400DCE3A0 /* SoftModem */,
+			);
+			name = Class;
+			path = FSK_Demo/Class;
+			sourceTree = "<group>";
+		};
+		682A5F0C19CD364400DCE3A0 /* FK */ = {
+			isa = PBXGroup;
+			children = (
+				682A5F0D19CD364400DCE3A0 /* NSString+HexColor.h */,
+				682A5F0E19CD364400DCE3A0 /* NSString+HexColor.m */,
+				682A5F0F19CD364400DCE3A0 /* UIView+Layout.h */,
+			);
+			path = FK;
+			sourceTree = "<group>";
+		};
+		682A5F1019CD364400DCE3A0 /* SoftModem */ = {
+			isa = PBXGroup;
+			children = (
+				682A5F1119CD364400DCE3A0 /* AudioQueueObject.h */,
+				682A5F1219CD364400DCE3A0 /* AudioQueueObject.m */,
+				682A5F1319CD364400DCE3A0 /* AudioSignalAnalyzer.h */,
+				682A5F1419CD364400DCE3A0 /* AudioSignalAnalyzer.m */,
+				682A5F1519CD364400DCE3A0 /* AudioSignalGenerator.h */,
+				682A5F1619CD364400DCE3A0 /* AudioSignalGenerator.m */,
+				682A5F1719CD364400DCE3A0 /* CharReceiver.h */,
+				682A5F1819CD364400DCE3A0 /* FSKByteQueue.h */,
+				682A5F1919CD364400DCE3A0 /* FSKModemConfig.h */,
+				682A5F1A19CD364400DCE3A0 /* FSKRecognizer.h */,
+				682A5F1B19CD364400DCE3A0 /* FSKRecognizer.mm */,
+				682A5F1C19CD364400DCE3A0 /* FSKSerialGenerator.h */,
+				682A5F1D19CD364400DCE3A0 /* FSKSerialGenerator.mm */,
+				682A5F1E19CD364400DCE3A0 /* lockfree.h */,
+				682A5F1F19CD364400DCE3A0 /* MultiDelegate.h */,
+				682A5F2019CD364400DCE3A0 /* MultiDelegate.m */,
+				682A5F2119CD364400DCE3A0 /* PatternRecognizer.h */,
+			);
+			path = SoftModem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		682A5ED019CD35A500DCE3A0 /* FSK_Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682A5F0319CD35A500DCE3A0 /* Build configuration list for PBXNativeTarget "FSK_Demo" */;
+			buildPhases = (
+				682A5ECD19CD35A500DCE3A0 /* Sources */,
+				682A5ECE19CD35A500DCE3A0 /* Frameworks */,
+				682A5ECF19CD35A500DCE3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSK_Demo;
+			productName = FSK_Demo;
+			productReference = 682A5ED119CD35A500DCE3A0 /* FSK_Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		682A5EF119CD35A500DCE3A0 /* FSK_DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682A5F0619CD35A500DCE3A0 /* Build configuration list for PBXNativeTarget "FSK_DemoTests" */;
+			buildPhases = (
+				682A5EEE19CD35A500DCE3A0 /* Sources */,
+				682A5EEF19CD35A500DCE3A0 /* Frameworks */,
+				682A5EF019CD35A500DCE3A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682A5EF819CD35A500DCE3A0 /* PBXTargetDependency */,
+			);
+			name = FSK_DemoTests;
+			productName = FSK_DemoTests;
+			productReference = 682A5EF219CD35A500DCE3A0 /* FSK_DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682A5EC919CD35A500DCE3A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FSK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = x;
+				TargetAttributes = {
+					682A5EF119CD35A500DCE3A0 = {
+						TestTargetID = 682A5ED019CD35A500DCE3A0;
+					};
+				};
+			};
+			buildConfigurationList = 682A5ECC19CD35A500DCE3A0 /* Build configuration list for PBXProject "FSK_Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 682A5EC819CD35A500DCE3A0;
+			productRefGroup = 682A5ED219CD35A500DCE3A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				682A5ED019CD35A500DCE3A0 /* FSK_Demo */,
+				682A5EF119CD35A500DCE3A0 /* FSK_DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		682A5ECF19CD35A500DCE3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5EED19CD35A500DCE3A0 /* Images.xcassets in Resources */,
+				682A5EDF19CD35A500DCE3A0 /* InfoPlist.strings in Resources */,
+				682A5EE819CD35A500DCE3A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682A5EF019CD35A500DCE3A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5EFE19CD35A500DCE3A0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		682A5ECD19CD35A500DCE3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5F2719CD364400DCE3A0 /* FSKSerialGenerator.mm in Sources */,
+				682A5EE119CD35A500DCE3A0 /* main.m in Sources */,
+				682A5F2819CD364400DCE3A0 /* MultiDelegate.m in Sources */,
+				682A5F2219CD364400DCE3A0 /* NSString+HexColor.m in Sources */,
+				682A5F2B19CD36F600DCE3A0 /* AudioDemo.m in Sources */,
+				682A5EE519CD35A500DCE3A0 /* FSKAppDelegate.m in Sources */,
+				682A5EEB19CD35A500DCE3A0 /* FSKViewController.m in Sources */,
+				682A5F2619CD364400DCE3A0 /* FSKRecognizer.mm in Sources */,
+				682A5F2519CD364400DCE3A0 /* AudioSignalGenerator.m in Sources */,
+				682A5F2419CD364400DCE3A0 /* AudioSignalAnalyzer.m in Sources */,
+				682A5F2319CD364400DCE3A0 /* AudioQueueObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682A5EEE19CD35A500DCE3A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682A5F0019CD35A500DCE3A0 /* FSK_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		682A5EF819CD35A500DCE3A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682A5ED019CD35A500DCE3A0 /* FSK_Demo */;
+			targetProxy = 682A5EF719CD35A500DCE3A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		682A5EDD19CD35A500DCE3A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682A5EDE19CD35A500DCE3A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		682A5EE619CD35A500DCE3A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682A5EE719CD35A500DCE3A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		682A5EFC19CD35A500DCE3A0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682A5EFD19CD35A500DCE3A0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		682A5F0119CD35A500DCE3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		682A5F0219CD35A500DCE3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		682A5F0419CD35A500DCE3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSK_Demo/FSK_Demo-Prefix.pch";
+				INFOPLIST_FILE = "FSK_Demo/FSK_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		682A5F0519CD35A500DCE3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSK_Demo/FSK_Demo-Prefix.pch";
+				INFOPLIST_FILE = "FSK_Demo/FSK_Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		682A5F0719CD35A500DCE3A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FSK_Demo.app/FSK_Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSK_Demo/FSK_Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FSK_DemoTests/FSK_DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		682A5F0819CD35A500DCE3A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FSK_Demo.app/FSK_Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FSK_Demo/FSK_Demo-Prefix.pch";
+				INFOPLIST_FILE = "FSK_DemoTests/FSK_DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		682A5ECC19CD35A500DCE3A0 /* Build configuration list for PBXProject "FSK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682A5F0119CD35A500DCE3A0 /* Debug */,
+				682A5F0219CD35A500DCE3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682A5F0319CD35A500DCE3A0 /* Build configuration list for PBXNativeTarget "FSK_Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682A5F0419CD35A500DCE3A0 /* Debug */,
+				682A5F0519CD35A500DCE3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682A5F0619CD35A500DCE3A0 /* Build configuration list for PBXNativeTarget "FSK_DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682A5F0719CD35A500DCE3A0 /* Debug */,
+				682A5F0819CD35A500DCE3A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682A5EC919CD35A500DCE3A0 /* Project object */;
+}

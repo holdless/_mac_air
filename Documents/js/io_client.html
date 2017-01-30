@@ -1,0 +1,9 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+  socket.on('news', function (data) {
+    console.log(data);
+    document.write(data.hello);
+    socket.emit('my other event', { my: 'data' });
+  });
+</script>
