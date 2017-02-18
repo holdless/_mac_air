@@ -21,6 +21,7 @@ git add /Users/hiroshi/Documents/_github/dlib/examples/video_tracking_ex.cpp
 
 git add /Users/hiroshi/Documents/_github/dlib/examples/build/object_detector.svm
 git add /Users/hiroshi/Pictures/apples/*
+
 # CppMT
 git add /Users/hiroshi/Documents/_github/CppMT/CMakeLists.txt
 git add /Users/hiroshi/Documents/_github/CppMT/*.cpp
