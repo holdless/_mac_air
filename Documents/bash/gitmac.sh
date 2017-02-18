@@ -20,6 +20,7 @@ git add /Users/hiroshi/Documents/_github/dlib/examples/train_object_detector.cpp
 git add /Users/hiroshi/Documents/_github/dlib/examples/video_tracking_ex.cpp
 
 git add -f /Users/hiroshi/Documents/_github/dlib/examples/build/object_detector.svm
+git add -f /Users/hiroshi/Documents/_github/dlib/tools/imglab/build/apple_dataset.xml
 git add /Users/hiroshi/Pictures/apples/*
 
 # CppMT
