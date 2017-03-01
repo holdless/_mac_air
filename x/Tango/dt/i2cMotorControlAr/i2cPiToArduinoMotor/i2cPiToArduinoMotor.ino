@@ -17,8 +17,10 @@ byte dir = 0;
 
 void hold()
 {
-  analogWrite(EA, 0);
-  analogWrite(EB, 0);
+  digitalWrite(IA, LOW);
+  digitalWrite(IB, LOW);
+  digitalWrite(IC, LOW);
+  digitalWrite(ID, LOW);
 }
 
 void forward(byte s)
@@ -41,17 +43,7 @@ void backward(byte s)
   digitalWrite(ID, LOW);
 }
 
-void turn_left(byte s)
-{
-  analogWrite(EA, s);
-  analogWrite(EB, s);
-  digitalWrite(IA, LOW);
-  digitalWrite(IB, HIGH);
-  digitalWrite(IC, LOW);
-  digitalWrite(ID, HIGH);
-}
-
-void turn_right(byte s)
+void ccw(byte s)
 {
   analogWrite(EA, s);
   analogWrite(EB, s);
@@ -61,27 +53,56 @@ void turn_right(byte s)
   digitalWrite(ID, LOW);
 }
 
-void forward_bias(byte l, byte r)
+void cw(byte s)
 {
-  analogWrite(EA, l);
-  analogWrite(EB, r);
-  digitalWrite(IA, HIGH);
-  digitalWrite(IB, LOW);
+  analogWrite(EA, s);
+  analogWrite(EB, s);
+  digitalWrite(IA, LOW);
+  digitalWrite(IB, HIGH);
   digitalWrite(IC, LOW);
   digitalWrite(ID, HIGH);
 }
 
-void backward_bias(byte l, byte r)
+void up_left(byte s)
 {
-  analogWrite(EA, l);
-  analogWrite(EB, r);
+  analogWrite(EA, s);
+//  analogWrite(EB, 0);
+  digitalWrite(IA, HIGH);
+  digitalWrite(IB, LOW);
+  digitalWrite(IC, HIGH);
+  digitalWrite(ID, HIGH);
+}
+
+void up_right(byte s)
+{
+//  analogWrite(EA, 0);
+  analogWrite(EB, s);
+  digitalWrite(IA, HIGH);
+  digitalWrite(IB, HIGH);
+  digitalWrite(IC, LOW);
+  digitalWrite(ID, HIGH);
+}
+
+void down_left(byte s)
+{
+  analogWrite(EA, s);
+//  analogWrite(EB, 0);
   digitalWrite(IA, LOW);
+  digitalWrite(IB, HIGH);
+  digitalWrite(IC, HIGH);
+  digitalWrite(ID, HIGH);
+}
+
+void down_right(byte s)
+{
+//  analogWrite(EA, 0);
+  analogWrite(EB, s);
+  digitalWrite(IA, HIGH);
   digitalWrite(IB, HIGH);
   digitalWrite(IC, HIGH);
   digitalWrite(ID, LOW);
 }
 
-////
 ////////////////////
 
 void setup() 
@@ -92,6 +113,13 @@ void setup()
   // define callbacks for i2c communication
   Wire.onReceive(receiveData);
   Wire.onRequest(sendData);
+
+  pinMode(EA,OUTPUT);//output
+ pinMode(EB,OUTPUT);
+ pinMode(IA,OUTPUT);
+ pinMode(IB,OUTPUT);
+ pinMode(IC,OUTPUT);
+ pinMode(ID,OUTPUT);
 }
  
 void loop() 
@@ -109,22 +137,22 @@ void receiveData(int byteCount)
   {
     dir = Wire.read();
  
-    if (dir == 1)
+    if (dir == 1) // up
       forward(speed);
-    else if (dir == 2)
+    else if (dir == 2) // down
       backward(speed);
-    else if (dir == 3)
-      turn_left(speed - 50);
-    else if (dir == 4)
-      turn_right(speed - 50);
-    else if (dir == 5)
-      forward_bias(speed - 100, speed);
-    else if (dir == 6)
-      forward_bias(speed, speed - 100);
-    else if (dir == 7)
-      backward_bias(speed - 100, speed);
-    else if (dir == 8)
-      backward_bias(speed, speed - 100);
+    else if (dir == 3) // left
+      ccw(speed);
+    else if (dir == 4) // right
+      cw(speed);
+    else if (dir == 5) // up-left
+      up_left(speed);
+    else if (dir == 6) // up-right
+      up_right(speed);
+    else if (dir == 7) // down-left
+      down_left(speed);
+    else if (dir == 8) // down-right
+      down_right(speed);
     else
       hold();
   }

@@ -6,8 +6,6 @@ const byte IB = 7;
 const byte IC = 8;
 const byte ID = 9;
 
-byte dir = 0;
-
 void hold()
 {
   analogWrite(EA, 0);
@@ -34,7 +32,7 @@ void backward(byte s)
   digitalWrite(ID, LOW);
 }
 
-void turn_left(byte s)
+void left(byte s)
 {
   analogWrite(EA, s);
   analogWrite(EB, s);
@@ -44,7 +42,7 @@ void turn_left(byte s)
   digitalWrite(ID, HIGH);
 }
 
-void turn_right(byte s)
+void right(byte s)
 {
   analogWrite(EA, s);
   analogWrite(EB, s);
@@ -54,32 +52,17 @@ void turn_right(byte s)
   digitalWrite(ID, LOW);
 }
 
-void forward_bias(byte l, byte r)
-{
-  analogWrite(EA, l);
-  analogWrite(EB, r);
-  digitalWrite(IA, HIGH);
-  digitalWrite(IB, LOW);
-  digitalWrite(IC, LOW);
-  digitalWrite(ID, HIGH);
-}
-
-void backward_bias(byte l, byte r)
-{
-  analogWrite(EA, l);
-  analogWrite(EB, r);
-  digitalWrite(IA, LOW);
-  digitalWrite(IB, HIGH);
-  digitalWrite(IC, HIGH);
-  digitalWrite(ID, LOW);
-}
-
-////
-////////////////////
-
+////////////////
 void setup() {
-  byte lspeed = 200;
-  byte rspeed = 200;
+  pinMode(EA,OUTPUT);//output
+  pinMode(EB,OUTPUT);
+  pinMode(IA,OUTPUT);
+  pinMode(IB,OUTPUT);
+  pinMode(IC,OUTPUT);
+  pinMode(ID,OUTPUT);
+
+  byte lspeed = 255;
+  byte rspeed = 255;
   forward(lspeed);
   delay(3000);
   hold();
@@ -90,26 +73,15 @@ void setup() {
   hold();
   delay(1000);
 
-  turn_left(lspeed);
+  left(lspeed);
   delay(3000);
   hold();
   delay(1000);
 
-  forward_bias(lspeed - 100, lspeed);
+  right(lspeed);
   delay(3000);
   hold();
   delay(1000);
-
-  turn_right(lspeed);
-  delay(3000);
-  hold();
-  delay(1000);
-
-  forward_bias(lspeed, lspeed - 100);
-  delay(3000);
-  hold();
-  delay(1000);
-
 }
  
 void loop() 
